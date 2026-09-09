@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog Tech</title>
-    
+   
     <style>
-        /* Aqui fica o seu CSS organizado */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
 
         header {
-            background-color: blue;
-            color: white;
+            background-color: #183C63;
+            color: #FFFFFF;
             text-align: center;
-            padding: 20px;
+            padding: 20px 0;
+            /* Borda vermelha em volta do cabeçalho */
+            border: 5px solid #cf1010;
+        }
+
+        header .logo {
+            max-width: 120px; /* Ajuste o tamanho conforme desejar */
+            height: auto;
+            margin-bottom: 10px;
         }
 
         main {
@@ -31,29 +38,26 @@
         }
 
         .post {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-        }
-
-        .autor {
-            font-style: italic;
-            color: #555;
+            margin-top: 20px;
+            border-top: 1px solid #183C63;
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
 
     <header>
+        <img src="imagem-blog.png" alt="Logotipo de tecnologia e educação" class="logo">
         <h1>Meu blog tech</h1>
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
     </header>
 
     <main>
-        <article class="post">
+        <section class="post">
             <h2>Meu primeiro post</h2>
-            <p class="autor">Por: Nicoli Koetz</p>
+            <p><strong>Por:</strong> Kauany Clein</p>
             <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-        </article>
+        </section>
     </main>
 
 </body>
@@ -63,123 +67,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog Interativo</title>
-
-    <!-- ESTILOS (CSS) -->
-    <style>
-        /* Configurações gerais da página */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Cabeçalho */
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        /* Layout principal */
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-
-        /* Card do Post */
-        article {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-
-        /* Seção do Contador de Cliques */
-        .interacao {
-            border-top: 1px solid #eee;
-            padding-top: 15px;
-            margin-top: 15px;
-        }
-
-        /* Estilo do Botão */
-        button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-
-        button:hover {
-            background-color: #2980b9;
-        }
-
-        /* Rodapé */
-        footer {
-            text-align: center;
-            padding: 10px;
-            color: #777;
-        }
-    </style>
+    <title>Meu blog tech</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ESTRUTURA (HTML) -->
-    <header>
-        <h1>Blog sobre Tecnologia</h1>
-        <p>Aprenda sobre HTML, CSS e JavaScript!</p>
-    </header>
-
-    <main>
+   <main>
         <article>
-            <h2>Como funciona o Front-end?</h2>
-            <p>No desenvolvimento web, utilizamos três linguagens principais:</p>
-            <ul>
-                <li><strong>HTML:</strong> Define a estrutura e o conteúdo da página.</li>
-                <li><strong>CSS:</strong> Cuida do visual, das cores e do layout.</li>
-                <li><strong>JavaScript:</strong> Adiciona lógica e interatividade aos elementos.</li>
-            </ul>
+            <img src="livro.png" alt="Livro" class="icone-post">
+            <h2>Meu primeiro post</h2>
+            <h3>Por: Kauany Clein</h3>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+            <div class="botoes">
+                <button>❤️ 0</button>
+                <button>💪 0</button>
+            </div>
+        </article>
 
-            <!-- Seção Interativa -->
-            <div class="interacao">
-                <p>Curtiu esse artigo? Clique no botão abaixo para curtir!</p>
-                <button id="btnCurtir">Curtir 👍</button>
-                <p>Total de curtidas: <strong id="contador">0</strong></p>
+        <article>
+           <img src="dados.png" alt="Dados" class="icone-post">
+            <h2>A quantidade de dados no mundo é surreal</h2>
+            <h3>Por: Kauany Clein</h3>
+            <p>Estima-se que 90% de todos os dados existentes no mundo hoje foram gerados apenas nos últimos dois anos. Vivemos em uma verdadeira explosão de informação que não para de acelerar.</p>
+            <span class="fonte">Fonte: Jornal Opção</span>
+            <div class="botoes">
+                <button>❤️ 0</button>
+                <button>💪 0</button>
+            </div>
+        </article>
+
+        <article>
+           <img src="mouse.png" alt="Mouse" class="icone-post">
+            <h2>O primeiro mouse não era de plástico</h2>
+            <h3>Por: Kauany Clein</h3>
+            <p>Antes do design ergonômico e das luzes RGB, o primeiro mouse do mundo foi construído em madeira! Criado por Douglas Engelbart em 1964, ele tinha o formato de uma caixa quadrada e apenas um botão.</p>
+            <span class="fonte">Fonte: TecMundo</span>
+            <div class="botoes">
+                <button>❤️ 0</button>
+                <button>💪 0</button>
             </div>
         </article>
     </main>
+<img src="imagens/foto.png">.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- A classe .tema-escuro pode ser alternada no body via JavaScript posteriormente -->
+<body class="tema-escuro">
 
-    <footer>
-        <p>&copy; 2026 - Criado para fins educativos.</p>
-    </footer>
+    <header>
+        <h1>Dilemas Digitais</h1>
+        <!-- Botão de alternar tema que ganha destaque no modo escuro -->
+        <button class="btn-tema-escuro" aria-label="Alternar tema">
+            <span class="icone-sol-lua"></span>
+        </button>
+    </header>
 
-    <!-- INTERAÇÃO (JAVASCRIPT) -->
-    <script>
-        // Criamos uma variável no JS para armazenar a quantidade de curtidas
-        let curtidas = 0;
-
-        // Selecionamos os elementos da tela pelos IDs do HTML
-        const botao = document.getElementById('btnCurtir');
-        const contadorTexto = document.getElementById('contador');
-
-        // Adicionamos um "ouvinte de evento" ao botão para detectar o clique
-        botao.addEventListener('click', function() {
-            // Soma +1 à variável curtidas
-            curtidas = curtidas + 1;
-            
-            // Atualiza o texto dentro da tag <strong> na página HTML
-            contadorTexto.textContent = curtidas;
-        });
-    </script>
+    <main>
+        <!-- Artigo com efeito de profundidade box-shadow -->
+        <article>
+            <div class="conteudo-artigo">
+                <h2>Como agir com responsabilidade no mundo conectado?</h2>
+                <p>Investigar um problema digital de alcance social nos ajuda a compreender o impacto real da desinformação na sociedade.</p>
+                <a href="#" class="fonte-link">Fonte: TecMundo</a>
+               
+                <div class="reacoes">
+                    <span class="reacao">❤️ 0</span>
+                    <span class="reacao">👍 0</span>
+                </div>
+            </div>
+        </article>
+    </main>
 
 </body>
 </html>
